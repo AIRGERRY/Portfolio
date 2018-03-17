@@ -1,19 +1,14 @@
-package aston.view.gui;
 import java.awt.*;
 import java.awt.event.*;
 
 import javax.swing.*;
 import javax.swing.border.*;
 
-import aston.simulation.Simulation;
-import aston.station.Station;
-import aston.resources.Config;
-
 /**
  * Graphical UI
  * 
- * @author Ollie, Gerard
- * @version 1.5
+ * @author Gerard
+ * @version 1.0
  * @since 8 Mar 2017
  *
  */
@@ -38,7 +33,6 @@ public class GUI {
 	private int max = 5; //Maximum probability of 0.5.
 	private int min = 1; //Probability cannot go below 0.1.
 	private int defaultValue = 1; //Default probability value.
-
 	
 	public GUI() {
 		
