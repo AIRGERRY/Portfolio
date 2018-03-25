@@ -90,6 +90,7 @@ public class LoadingScreen implements Screen {
 		skin.dispose();
 		soundImage.dispose();
 		titleImage.dispose();
+		checkBox.dispose();
 	}
 
 }
