@@ -63,6 +63,7 @@ public class MenuScreen implements Screen {
 				}
 			}
 		});
+		
 		startGameButton.addListener(new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
@@ -70,13 +71,16 @@ public class MenuScreen implements Screen {
 				main.setScreen(new GameScreen(main));
 			}
 		});
+		
 		optionsGameButton.addListener(new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				sound.getSound().play(0.75f);
 				main.setScreen(new OptionScreen(main));
 			}
+			
 		});
+		
 		quitGameButton.addListener(new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
@@ -84,6 +88,7 @@ public class MenuScreen implements Screen {
 				Gdx.app.exit();
 			}
 		});
+		
 		table.add(titleImage).pad(15);
 		table.row();
 		table.add(startGameButton).pad(10);
@@ -130,4 +135,5 @@ public class MenuScreen implements Screen {
 		music.dispose();
 		image.dispose();
 	}
+	
 }
