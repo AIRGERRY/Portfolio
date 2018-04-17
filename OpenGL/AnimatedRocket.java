@@ -66,7 +66,7 @@ import GraphicsLab.*;
  * </ul>
  *
  */
-public class CS2150Coursework extends GraphicsLab
+public class AnimatedRocket extends GraphicsLab
 {
 	private final int mainbodyList = 1;
 	private final int leftbodyList = 2;
