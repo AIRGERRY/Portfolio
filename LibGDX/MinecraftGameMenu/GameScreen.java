@@ -37,18 +37,19 @@ public class GameScreen implements Screen {
 	public void show() {
 		Table table = new Table();
 		table.setFillParent(true);
-
+		//Creates multiple text buttons...
 		TextButton newGameButton = new TextButton("Play Game", skin.getSkin(), "default"); 
 		TextButton loadGameButton = new TextButton("Load Game", skin.getSkin(), "default");
 		TextButton backGameButton = new TextButton("Back to Main Menu", skin.getSkin(), "default");
-		
+		//Display and position retrieved image...
 		Image soundImage = new Image(image.getImage());
 		soundImage.setX(5);
 		soundImage.setY(535);
-		
+		//Logic for volume settings...
 		soundImage.addListener(new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
+				//If volume is max volume. Set volume to minimum once image is clicked.
 				if(music.getMusic().getVolume() == 1.0f && muted == false) {
 					music.getMusic().setVolume(0.0f);
 					sound.getSound().play(0.75f);
