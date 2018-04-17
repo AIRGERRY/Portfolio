@@ -49,10 +49,10 @@ public class GameSettings implements Screen {
 	public void show() {
 		Table table = new Table();
 		table.setFillParent(true);
-		
-		final Label labelPlayerColor = new Label("Player Color : White", getSkin());
+		//Construct Components...
+		final Label labelPlayerColor = new Label("Player Color : White", getSkin()); 
 		final TextButton chooseDifficultyButton = new TextButton("Difficulty : Hard", getSkin(), "default");
-		final TextButton chooseTimeButton = new TextButton("Time Limit : 15 Minutes", getSkin(), "default");
+		final TextButton chooseTimeButton = new TextButton("Time Limit : 15 Minutes", getSkin(), "default"); 
 		final TextButton startGameButton = new TextButton("Start Game!", getSkin(), "default");
 		final TextButton backGameButton = new TextButton("Back", getSkin(), "default");
 		final Slider playerSlider = new Slider(0, 1, 1, false, getSkin());
