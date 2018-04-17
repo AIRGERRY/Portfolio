@@ -70,6 +70,7 @@ public class OptionScreen implements Screen{
 				}
 			}
 		});
+		//Volume settings logic. Sets label for each volume. (i.e Max volume = Volume: 100%)
 		volumeSlider.addListener(new ChangeListener() {
 			public void changed (ChangeEvent event, Actor actor) {
 				music.getMusic().setVolume(volumeSlider.getValue());
